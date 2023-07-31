@@ -1,0 +1,309 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+
+/* 
+1. 동영상정렬
+2. 사이드바 열리면 아이콘과 텍스트 재정렬
+3. 비디오박스들이 자동으로 불러와지는 함수가 필요한가?
+4. 깃헙 폴더이름변경
+  */
+
+
+body {
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  line-height: 1.5em;
+  margin: 0;
+  font-weight: 300;
+}
+.container{
+  
+}
+/* 1. 헤더 */
+header {
+  width: 100%;
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 0px;
+  left: 50%;
+  color: white;
+  background-color: rgb(50, 50, 50);
+}
+.logoBox{
+  border: 1px solid #918da5;
+  width: 150px;
+  height: 80px;
+  padding: 0px 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  position: fixed; 
+  left: 100px; 
+  top: 0; 
+}
+.logo{
+  display: flex;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.fa{
+  font-size: 30px;
+  color: red;
+}
+
+.searchBox{
+  border: 1px solid red;
+  width: 400px;
+  height: 80px;
+  padding-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.search{
+  display: flex;
+  padding: 0 10px;
+}
+#input-box{
+  border-radius: 30px 0 0 30px ;
+  width: 300px;
+  height: 50px;
+  border: 2px solid gray;
+  font-size: 25px;
+  padding-left: 25px;
+  background: rgb(50, 50, 50);
+}
+.addBtn{
+  font-size: 30px;
+  background: grey;
+  outline: none;
+  border: none;
+  width: 70px;
+  border-radius: 0 30px 30px 0;
+}
+::placeholder{
+  /* font-size: 25px;
+  padding-left: 25px; */
+}
+
+
+/* 2. 사이드바 */
+input[id=trigger] {
+  display: none;
+}
+label[for=trigger] {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 40px;
+  left: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+ 
+.sidebar {
+  background: rgb(50, 50, 50);
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0px;  
+  transition: 0.3s;
+  /* opacity: 20%; */
+} 
+.iconBox{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(255, 255, 255);
+  height: 140px;
+  
+}
+
+
+.icon{
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.iconText{
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0;
+
+}
+
+
+
+/* 
+ .sidebar {
+  background: rgb(50, 50, 50);
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0px;  
+  transition: 0.3s;
+}
+.iconBox{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: flex-start;  
+  color: rgb(255, 255, 255);
+  height: 140px;
+  
+}
+
+.icons{
+
+}
+
+.icon{
+  font-size: 20px;
+  margin-left: 20px;
+
+}
+
+
+.iconText{
+  font-size: 24px;
+  padding: 15px 0;
+  display: inline-block;
+  font-weight: none;
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  margin-left: 30px;
+
+}
+ */
+
+
+
+
+
+input[id=trigger]:checked ~ .sidebar {
+  background: rgb(50, 50, 50);
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0px;  
+  transition: 0.3s;
+}
+input[id=trigger]:checked ~ .iconBox {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: flex-start;  
+  color: rgb(255, 255, 255);
+  height: 140px;
+}
+input[id=trigger]:checked ~ .icon {
+  font-size: 20px;
+  margin-left: 20px;
+}
+input[id=trigger]:checked ~ .iconText {
+  font-size: 24px;
+  padding: 15px 0;
+  display: inline-block;
+  font-weight: none;
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  margin-left: 30px;
+}
+
+
+  /* 3. 영상들 */
+  /* 세부요소 몇가지만 남기고 메인부분은 하이드처리 */
+main{
+  margin-left: 75px;
+  box-sizing: border-box;
+  border: 5px solid rgb(255, 0, 0);
+  width: calc(100% - 75px);
+  right: 100px;
+}
+/* 비디오한개의정보 ul */
+ul{
+
+}
+.videoList{
+  border: 10px solid rgb(255, 119, 0);
+  margin-left: 20px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* 비디오한개의정보 li */
+li{
+  border: 5px solid rgb(255, 255, 0);    
+  width: 450px;
+  height: 400px;
+  display: inline-block;
+}
+.videoList > .title{
+  
+}
+.item{
+}
+
+
+/* 비디오 또는 썸네일부분 */
+.videoList .player{
+ }
+
+/* 영상자체 */
+video{
+  width: 100%;
+  height: 300px;
+  display: none;
+
+ }
+ /* 썸네일 */
+.player img{
+  width: 100%;
+  height: 300px;
+}
+
+.videoList .item
+
+.videoList .item .info{
+  display: flex;
+  flex-direction: column;
+}
+
+ .info span{
+
+ }
+
+.noShow{
+  display: none;
+}
+
+
+
+
+
+
+
+ 
+
+  /* 4. 하단영역(할말고민중) */

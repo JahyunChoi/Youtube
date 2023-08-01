@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/5fa28a085f.js" crossorigin="anonymous"></script>
+
   <title>Youtube Main</title>
   
- 
 </head>
 <body>
-    <!-- <div class="container"> -->
   <header>
+    <!-- 사이드바 조절 label 헤더에 붙임 -->
     <label for="trigger">
       <i class="fa-solid fa-grip-lines"></i>
     </label>
@@ -29,8 +31,7 @@
     </div>
   </header>
     
-    <!-- sidebar -->
-
+  <!-- sidebar -->
   <div class="sidebarBox">
     <input type="checkbox" id="trigger">
     <label for="trigger">
@@ -48,405 +49,32 @@
         <a class="iconBox" href="https://music.youtube.com/"><i class="icon fa-solid fa-music"><div class="iconText">music</div></i></a>
       </div>
     </div>
-    <!-- video부분 -->
+
+    <!-- video 목록 -->
     <main>
         <ul class="videoList">
           <li class="item">
             <section class="player">
-              <!-- <video video controls src="video/cat.mp4"></video> -->
-              <img src="image/sum2.png">
+              <!-- <video video controls src="video/cat.mp4"></video> 플레이어 주석처리 -->
+              <img src="image/thumbnail.png">
             </section>
-            <section class="inboBox">
-              <span class="titleBox">
-                <img class="profileImg" src="image/img.png" >
-                <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                </button>
+            <span class="titleBox">
+              <img class="profileImg" src="image/img.png" >
+              <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만재미있습니다. 취업을 해야 합니다.</span>
+              <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
+              </button>
+            </span>
+            <div class="info">            
+              <span class="name">
+                By. 고양이엉덩이
               </span>
-              <div class="info">            
-                <span class="name">
-                  By. 고양이엉덩이
-                </span>
-                <span class="view">
-                  1M views one month ago
-                </span>
-              </div>
-              </section>
-            </li>
-
-
-      
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              
-            <li class="item">
-              <section class="player">
-                <!-- <video video controls src="video/cat.mp4"></video> -->
-                <img src="image/sum2.png">
-              </section>
-              <section class="inboBox">
-                <span class="titleBox">
-                  <img class="profileImg" src="image/img.png" >
-                  <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                  <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                  </button>
-                </span>
-                <div class="info">            
-                  <span class="name">
-                    By. 고양이엉덩이
-                  </span>
-                  <span class="view">
-                    1M views one month ago
-                  </span>
-                </div>
-                </section>
-              </li>
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-                
-              <li class="item">
-                <section class="player">
-                  <!-- <video video controls src="video/cat.mp4"></video> -->
-                  <img src="image/sum2.png">
-                </section>
-                <section class="inboBox">
-                  <span class="titleBox">
-                    <img class="profileImg" src="image/img.png" >
-                    <span class="title"> 유튜브 클론코딩 작성중입니다 코딩은 어렵지만 재미있습니다.</span>
-                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i>
-                    </button>
-                  </span>
-                  <div class="info">            
-                    <span class="name">
-                      By. 고양이엉덩이
-                    </span>
-                    <span class="view">
-                      1M views one month ago
-                    </span>
-                  </div>
-                  </section>
-                </li>
-        
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+              <span class="view">
+                1M views one month ago
+              </span>
+            </div>
+            </li>            
         </ul>
     </main>
-  </div>
-
-
-  <script src="custom.js"></script>
-  <script src="https://kit.fontawesome.com/5fa28a085f.js" crossorigin="anonymous"></script>
+  </div>  
 </body>
 </html>
